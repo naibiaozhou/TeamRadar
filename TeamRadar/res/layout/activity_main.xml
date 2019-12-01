@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.nut.teamradar.MainActivity" >
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical" >
+           
+	   <FrameLayout
+	       android:id="@+id/top_container"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:layout_gravity="top"
+	       android:layout_weight="0.1" >
+
+	    <fragment
+	        android:id="@+id/fragmentMain"
+	        android:name="com.nut.teamradar.Fragments.FragmentMap"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerInParent="true" >
+	
+	    </fragment>
+	
+	    <fragment
+	        android:id="@+id/fragmentActivity"
+	        android:name="com.nut.teamradar.Fragments.FragmentActivityManagment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerInParent="true" >
+	
+	    </fragment>
+	
+	   <fragment
+	        android:id="@+id/fragmentContacts"
+	        android:name="com.nut.teamradar.Fragments.FragmentContacts"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerInParent="true" >
+	
+	    </fragment>
+	    
+	   
+	   <fragment
+	       android:id="@+id/fragmentProfile"
+	       android:name="com.nut.teamradar.Fragments.FragmentChat"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:layout_centerInParent="true" >
+	
+	    </fragment>
+      
+	   </FrameLayout>
+
+	   <FrameLayout
+	       android:id="@+id/framefakebottom"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:layout_gravity="bottom"
+	       android:layout_weight="0.8" >
+
+	   </FrameLayout>
+	   </LinearLayout> 
+	   </FrameLayout>
+	   <FrameLayout
+	       android:id="@+id/bottom_container"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="bottom" >
+
+            <LinearLayout
+                android:id="@+id/verticalcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/btnCtrHome"
+                    style="@style/Icon"
+                    android:layout_weight="0.1"
+                    android:drawableTop="@drawable/radar_icon"
+                    android:text="主界面" />
+                
+                <TextView
+                    android:id="@+id/btnCtrActivity"
+                    style="@style/Icon"
+                    android:layout_weight="0.1"
+                    android:drawableTop="@drawable/activity_icon"
+                    android:text="活动" />
+                
+                <TextView
+                    android:id="@+id/btnCtrContact"
+                    style="@style/Icon"
+                    android:layout_weight="0.1"
+                    android:drawableTop="@drawable/contact_icon"
+                    android:text="好友" />     
+                    
+                <TextView
+                    android:id="@+id/btnCtrChat"
+                    style="@style/Icon"
+                    android:layout_weight="0.1"
+                    android:drawableTop="@drawable/chat_64"
+                    android:text="聊天记录" />
+
+            </LinearLayout>
+
+ 			<LinearLayout
+ 			    android:layout_width="match_parent"
+ 			    android:layout_height="match_parent"
+ 			    android:orientation="horizontal" >
+            </LinearLayout>
+
+            </LinearLayout>
+	   </FrameLayout>
+
+
+</FrameLayout>

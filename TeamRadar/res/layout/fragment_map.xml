@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:id="@+id/fragmentmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+           <fragment
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.amap.api.maps.SupportMapFragment"
+            android:clickable="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/bmapView"
+                android:layout_gravity="right"
+                android:orientation="vertical"
+                android:padding="2dp" >
+	        
+	        <ImageView
+	            android:id="@+id/imgSettings"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:src="@drawable/setting_icon"
+	            android:text="Button" />
+	
+	        <CheckBox
+	            android:id="@+id/traffic"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/traffic"
+	            android:textColor="@color/black" />
+
+    		</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp" >
+
+                <ImageView
+                    android:id="@+id/imgHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/icon_helpb_64"
+                    android:text="Button" />
+                <CheckBox
+	            android:id="@+id/satelliteview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/satelliteview"
+	            android:textColor="@color/black" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:orientation="vertical"
+                android:padding="2dp" > 
+                <ImageView
+                android:id="@+id/imgCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/position"
+                android:text="Button" />      
+            </LinearLayout>
+
+
+
+</FrameLayout>
+    
+
+    
+</LinearLayout>

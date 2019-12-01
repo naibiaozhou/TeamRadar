@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/setting_basicinfo" >
+	   	<EditTextPreference   
+		    android:dialogTitle="@string/setting_username"   
+		    android:key="EditPreferenceUserName"   
+		    android:summary="@string/setting_username"   
+		    android:title="@string/setting_username"   />   
+		<ListPreference
+	            android:key="ListPreferenceGender"
+	            android:title="@string/setting_gender"
+	            android:summary="@string/setting_selectgender"
+	        	android:entries="@array/Gender"
+	        	android:entryValues="@array/GenderValue"
+	        />
+		<EditTextPreference   
+		    android:dialogTitle="@string/setting_weight"  
+		    android:key="EditPreferenceWeight"   
+		    android:summary="@string/setting_weight"  
+		    android:title="@string/setting_weight"  />  
+		<EditTextPreference   
+		    android:dialogTitle="@string/setting_height"   
+		    android:key="EditPreferenceHeight"   
+		    android:summary="@string/setting_height"  
+		    android:title="@string/setting_height"   />  
+		<EditTextPreference   
+		    android:dialogTitle="@string/setting_birthday"   
+		    android:key="EditPreferenceBirthday"   
+		    android:summary="@string/setting_birthday"   
+		    android:title="@string/setting_birthday"  />          
+	   	<EditTextPreference   
+		    android:dialogTitle="@string/setting_email"     
+		    android:key="EditPreferenceEmail"   
+		    android:summary="@string/setting_email"     
+		    android:title="@string/setting_email"     /> 	
+	   	<EditTextPreference   
+		    android:dialogTitle="@string/setting_occupation"   
+		    android:key="EditPreferenceOccupation"   
+		    android:summary="@string/setting_occupation"   
+		    android:title="@string/setting_occupation"   /> 	
+	 </PreferenceCategory>
+	 
+     <PreferenceCategory android:title="@string/setting_changepassword" 
+    	android:key="PreferenceCategoryControl">   	
+		<EditTextPreference   
+		    android:dialogTitle="@string/setting_oldpassword"    
+		    android:key="EditPreferenceOldPassword"   
+		    android:summary="@string/setting_oldpassword"   
+		    android:title="@string/setting_oldpassword"    />
+		<EditTextPreference   
+		    android:dialogTitle="@string/setting_newpassword"  
+		    android:key="EditPreferenceNewPassword"   
+		    android:summary="@string/setting_newpassword"   
+		    android:title="@string/setting_newpassword"   />
+		
+	</PreferenceCategory>   
+	     
+    <PreferenceCategory android:title="@string/setting_selectmsgset"> 	
+	<ListPreference
+            android:key="ListPreferenceMessageSetting"
+            android:title="@string/setting_selectmsgset"
+            android:summary="@string/setting_selectmsgset"
+        	android:entries="@array/MessageSetting"
+        	android:entryValues="@array/MessageSettingValue"
+        />
+	</PreferenceCategory>  
+	<PreferenceCategory android:title="@string/setting_offlinemap">  
+		<EditTextPreference   
+		    android:dialogTitle="@string/setting_offlinemap"  
+		    android:key="EditPreferenceOfflineMap"   
+		    android:summary="@string/setting_offlinemap"   
+		    android:title="@string/setting_offlinemap"   /> 
+	</PreferenceCategory>   
+</PreferenceScreen>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/stringarray1" name="CountryCode">
+        <item android:id="@+id/item1" android:layout_height="wrap_content" android:layout_width="wrap_content">中国+86</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+        <string-array name="GenderValue">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="MessageSetting">
+        <item>音乐</item>
+        <item>震动</item>
+        <item>无</item>
+    </string-array>
+        <string-array name="MessageSettingValue">
+        <item>Sound</item>
+        <item>Viber</item>
+        <item>None</item>
+    </string-array>
+</resources>

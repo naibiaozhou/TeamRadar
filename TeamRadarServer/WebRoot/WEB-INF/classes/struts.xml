@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    
+	<constant name="struts2.sslplugin.httpPort" value="8085"/> 
+	<constant name="struts2.sslplugin.httpsPort" value="8443"/> 
+    
+	<package name="default" extends="json-default">
+
+        <action name="login" class="com.nut.teamradar.loginAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getuserid" class="com.nut.teamradar.getUseridAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="registration" class="com.nut.teamradar.registrationAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getactivities" class="com.nut.teamradar.getActivitiesAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getprofile" class="com.nut.teamradar.getProfileAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updateprofile" class="com.nut.teamradar.updateProfileAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getmembers" class="com.nut.teamradar.getMembersAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="deletemember" class="com.nut.teamradar.deleteMemberAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="deleteactivity" class="com.nut.teamradar.deleteActivityAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="createactivity" class="com.nut.teamradar.createActivityAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="pushmessage" class="com.nut.teamradar.pushMessageAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="pullmessage" class="com.nut.teamradar.pullMessageAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getjoinedactivities" class="com.nut.teamradar.getJoinedActivitiesAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="addusertoactivity" class="com.nut.teamradar.addUserToActivityAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="deleteamemberfromactivity" class="com.nut.teamradar.deleteAMemberFromActivityAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getactivitiesbysubscription" class="com.nut.teamradar.getActivitiesBySubscriptionAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="addlocation" class="com.nut.teamradar.addLocationAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getalllocations" class="com.nut.teamradar.getAllLocationsAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getsessionid" class="com.nut.teamradar.getSessionIdAction">
+        	<result type="json"></result> 
+        </action>
+    	<action name="addcontact" class="com.nut.teamradar.addContactAction">
+        	<result type="json"></result> 
+        </action>
+    	<action name="getcontactsbysubscription" class="com.nut.teamradar.getContactsBySubscriptionAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updaterendezvous" class="com.nut.teamradar.updateRendezvousAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getrendezvous" class="com.nut.teamradar.getRendezvousAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updatebirthday" class="com.nut.teamradar.updateBirthdayAction">
+        	<result type="json"></result> 
+        </action>
+         <action name="updateemail" class="com.nut.teamradar.updateEmailAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updategender" class="com.nut.teamradar.updateGenderAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updateheight" class="com.nut.teamradar.updateHeightAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updateweight" class="com.nut.teamradar.updateWeightAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updateoccupation" class="com.nut.teamradar.updateOccupationAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updatepassword" class="com.nut.teamradar.updatePasswordAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="updateusername" class="com.nut.teamradar.updateUserNameAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="startactivity" class="com.nut.teamradar.startActivityAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="getactivityhistory" class="com.nut.teamradar.getActivityHistoryAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="gethistorylocations" class="com.nut.teamradar.getHistoryLocationsAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="deletecontact" class="com.nut.teamradar.deleteContactAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="createhxuser" class="com.nut.teamradar.CreateHXUserAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="changepassword" class="com.nut.teamradar.ChangePasswordAction">
+        	<result type="json"></result> 
+        </action>
+        <action name="changehxuserpassword" class="com.nut.teamradar.ChangeHXUserPasswordAction">
+        	<result type="json"></result> 
+        </action>
+    </package>
+</struts>    
